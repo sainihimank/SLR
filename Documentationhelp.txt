@@ -1,0 +1,69 @@
+Yes, this is indeed a machine learning project. Based on the code you've shared, I can help you identify the key components and algorithms used for the documentation. Here's a breakdown:
+
+Machine Learning Algorithm:
+
+The primary algorithm used is Random Forest Classifier.
+This can be seen in the Train_model.py file:
+python
+
+Verify
+Edit
+Copy code
+from sklearn.ensemble import RandomForestClassifier
+model = RandomForestClassifier()
+Data Collection:
+
+Custom dataset created using webcam captures of hand gestures.
+Each gesture corresponds to a letter of the English alphabet (A-Z).
+Data collection process is implemented in Data_Collection.py.
+Data Preprocessing:
+data set from kaggel is used to train indian hand gesture
+
+Hand landmark detection using MediaPipe.
+Feature extraction from hand landmarks.
+Normalization of coordinates.
+Implemented in Data_Preprocessing.py.
+Model Training:
+
+Splitting data into training and testing sets.
+Training the Random Forest Classifier on preprocessed data.
+Evaluation using accuracy score.
+Implemented in Train_model.py.
+Real-time Prediction:
+
+Uses OpenCV for webcam feed processing.
+MediaPipe for real-time hand landmark detection.
+Applies the trained model for prediction.
+Implemented in Predictor_GUI.py.
+User Interface:
+
+GUI built using Tkinter and customtkinter.
+Real-time video feed display.
+Prediction display and word/sentence formation.
+Text-to-speech functionality using pyttsx3.
+Documentation Outline:
+
+Project Overview
+
+Objective: Real-time American Sign Language recognition and translation
+Key Features: Hand gesture recognition, text formation, speech synthesis
+Technical Stack
+
+Programming Language: Python
+Machine Learning: scikit-learn (Random Forest Classifier)
+Computer Vision: OpenCV, MediaPipe
+GUI: Tkinter, customtkinter
+Other Libraries: numpy, pyttsx3
+Project Components 3.1 Data Collection 3.2 Data Preprocessing 3.3 Model Training 3.4 Real-time Prediction and GUI
+
+Machine Learning Pipeline 4.1 Feature Extraction (using MediaPipe hand landmarks) 4.2 Model: Random Forest Classifier 4.3 Training Process 4.4 Model Evaluation
+
+Real-time Recognition Process 5.1 Webcam Input Processing 5.2 Hand Landmark Detection 5.3 Feature Extraction 5.4 Prediction Using Trained Model 5.5 Post-processing (word and sentence formation)
+
+User Interface 6.1 Video Feed Display 6.2 Prediction Display 6.3 Word and Sentence Formation 6.4 Text-to-Speech Functionality
+
+Future Improvements (You can add potential enhancements or expansions here)
+
+Conclusion
+
+This outline should help you create a comprehensive documentation for your project, highlighting the machine learning aspects and the overall system architecture.
